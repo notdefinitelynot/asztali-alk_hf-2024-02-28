@@ -73,12 +73,12 @@ namespace hf_2024_02_28
 
             Console.WriteLine(m1);
             Console.WriteLine(m1.milyenGyors());
-            Console.WriteLine(m1.legyorsuljaE(x1));
+            Console.WriteLine(m1.legyorsuljaE(x1) ? "m1 legyőzi x1-t" : "m1 veszít x1 ellen");
             m1.hiperUgras();
 
             Console.WriteLine(x1);
             Console.WriteLine(x1.milyenGyors());
-            Console.WriteLine(x1.legyorsuljaE(m1));
+            Console.WriteLine(x1.legyorsuljaE(m1) ? "x1 legyőzi m1-t" : "x1 veszít m1 ellen");
             Console.WriteLine(x1.elkapjaAVonosugar()?"Elkapja a vonsugar":"Nem kapja el a vonosugar");
             x1.hiperUgras();
 
@@ -86,7 +86,7 @@ namespace hf_2024_02_28
             x2.meghibasodhatE = false;
             Console.WriteLine(x2);
             Console.WriteLine(x2.milyenGyors());
-            Console.WriteLine(x2.legyorsuljaE(x1));
+            Console.WriteLine(x2.legyorsuljaE(x1)?"x2 legyőzi x1-t":"x2 veszít x1 ellen");
             Console.WriteLine(x2.elkapjaAVonosugar() ? "Elkapja a vonsugar" : "Nem kapja el a vonosugar");
 
 
@@ -102,7 +102,7 @@ namespace hf_2024_02_28
         static public void Main(String[] args)
         {
 
-            urhajok("C:/Users/Diak/dev/dnaa/asztali_alk/hf-2024-02-28/asd.txt");
+            urhajok("C:/Users/ndoba/Source/Repos/asztali-alk-hf-2024-02-28/hf-2024-02-28/file.txt");
             Console.WriteLine();
             hangar();
 
