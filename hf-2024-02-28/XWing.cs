@@ -24,7 +24,7 @@ namespace hf_2024_02_28
 
         public override string? ToString()
         {
-            return $"XWing: Sebesség: {this.Sebesseg} : (meghibasodhat-e: {(this.MeghibasodhatE ? "Meghibásodott":"Nincs meghibásodva")})";
+            return $"XWing: Sebesség: {this.Sebesseg} : Meghibasodas:  {(this.MeghibasodhatE ? "Meghibásodott":"Nincs meghibásodva")}";
             
         }
     }
